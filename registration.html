@@ -1,0 +1,28 @@
+<html>
+<body>
+<form action="success.html">
+User Name* 
+<input type="text" name="username" placeholder="Enter User Name" required>
+<br>
+Password*
+<input type="password" name="password" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{7,}$" required/>
+<br>
+Address <textarea name="address"></textarea>
+<br>
+Country <input list="countries" name="country">
+  <datalist id="countries">
+    <option value="India">
+    <option value="America">
+    <option value="China">
+    <option value="Ireland">
+  </datalist><br>
+Gender* <input type="radio" name="gender" value="male" required>Male</input><br>
+<input type="radio" name="gender" value="female" required>Female</input><br>
+Languages Known* <input type="checkbox" name="lang" value="Hindi">Hindi</input><br>
+<input type="checkbox" name="lang" value="English">English</input><br>
+<input type="checkbox" name="lang" value="Tamil">Tamil</input><br>
+<input type="image" name="submit" src="submit.png"/><br>
+<input type="reset" name="reset"/>
+</form>
+</body>
+</html>
